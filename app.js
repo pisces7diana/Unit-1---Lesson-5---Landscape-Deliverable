@@ -6,7 +6,7 @@
 // Use rusty scissors, then it cost $5, and you get paid $5
 // Use push lawnmover, then it cost $25, and you get paid $50
 // Use battery-powered lawnmover, then it cost $250, and you get paid $100
-// Use a team, then it cost $500, and you get paid $1000
+// Use a team, then it cost $500, and you get paid $250
 // Send to the landscaper that they have won the game
 
 const tools = [
