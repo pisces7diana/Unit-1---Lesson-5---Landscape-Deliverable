@@ -22,9 +22,8 @@ const landscaper = {
     tool: 0,
     wonGame: false
 }
-
-const tool = tools[landscaper.tool]
 function cuttingLawns(){
+    const tool = tools[landscaper.tool]
     alert(`You have cut the lawn with ${tool.name} and got ${tool.paid} dollars`);
     landscaper.money += tool.paid
 }
@@ -35,6 +34,7 @@ function upGrade(){
         if (newTool.cost <= landscaper.money) {
             landscaper.money -= newTool.cost;
             landscaper.tool += 1;
+            alert(`You have upgraded to ${tools[landscaper.tool].name}`)
         } else {
             alert("No more money left for an upgrade")
         }
@@ -44,7 +44,7 @@ function upGrade(){
 }
 
 function winsGame(){
-    if(landscaper.tool === tools.length - 1 && landscaper.money >=100){
+    if(landscaper.tool === tools.length - 1 && landscaper.money >=1000){
         alert("You win!")
         landscaper.wonGame = true
     }
